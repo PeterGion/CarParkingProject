@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CarParkingTracker</string>
+    <string name="shakespeare">Shakespeare</string>
+    <string name="cervantes">Cervantes</string>
+    <string name="shakespeareGarage">Shakespeare Parking Garage </string>
+    <string name="cervantesGarage">Cervantes Parking Garage </string>
+    <string name="Floor">Floor 1</string>
+    <string name="settings">Settings</string>
+    <string name="carParking">Parking Tracker App</string>
+    <string name="myName">By Peter Gionfriddo</string>
+    <string name="onStartup">On startup I want the app to</string>
+    <string name="Setting_pickup">Pickup where I left off</string>
+    <string name="Setting_favoriteGarage">open my favorite garage</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="floor">Floor</string>
+    <string name="Favorite_garage_selection">select your garage</string>
+
+</resources>

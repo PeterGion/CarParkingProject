@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/layoutholder"
+        style="@style/test"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/ParkingGarage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/cervantesGarage"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/FloorNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/Floor"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:id="@+id/FragmentH"
+            android:layout_width="match_parent"
+            android:layout_height="550dp">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ButtonHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:text="@string/settings"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/StartUpSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StartUpSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onStartup"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
+
+    <RadioGroup
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/garageSelection"
+        app:layout_constraintStart_toStartOf="@+id/StartUpSetting"
+        app:layout_constraintTop_toBottomOf="@+id/StartUpSetting">
+
+        <RadioButton
+            android:id="@+id/Pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Setting_pickup" />
+
+        <RadioButton
+            android:id="@+id/favorite"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/Setting_favoriteGarage" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/garageSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="@string/Favorite_garage_selection"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/GarageSelection"
+        app:layout_constraintStart_toStartOf="@+id/setting"
+        app:layout_constraintTop_toBottomOf="@+id/setting" />
+
+    <RadioGroup
+        android:id="@+id/GarageSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floor"
+        app:layout_constraintEnd_toEndOf="@+id/garageSelection"
+        app:layout_constraintTop_toBottomOf="@+id/garageSelection">
+
+        <RadioButton
+            android:id="@+id/Shakespeare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shakespeare" />
+
+        <RadioButton
+            android:id="@+id/Cervantes_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cervantes" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/floor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/floorNumbers"
+        app:layout_constraintEnd_toStartOf="@+id/floorNumbers"
+        app:layout_constraintStart_toStartOf="@+id/floorNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/GarageSelection"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/floorNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/settingsCog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floor"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/floorOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1" />
+
+        <RadioButton
+            android:id="@+id/floorTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_2" />
+
+        <RadioButton
+            android:id="@+id/floorThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_3" />
+
+        <RadioButton
+            android:id="@+id/floorFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_4" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/settingsCog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floorNumbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
